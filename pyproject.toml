@@ -1,0 +1,14 @@
+[project]
+name = "weather_forecast"
+version = "0.0.1"
+dependencies = [
+    "requests",
+    "click"
+]
+
+[project.scripts]
+weather_forecast = "weather_forecast.entry:run"
+
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"

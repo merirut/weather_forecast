@@ -1,0 +1,4 @@
+WEATHER_TYPE = "like"
+UNITS = "metric"
+APPID = "79f2ece6f2c919466890974e05d0b436"
+LANG = "ru"
