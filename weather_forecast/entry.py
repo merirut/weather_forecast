@@ -4,8 +4,9 @@ from weather_forecast.get_forecast import get_forecast
 
 
 @click.command()
-@click.option("--city", help="The city you want to ")
-@click.option("--days", default=1, help="Number of days you want to see in the forecast (from 1 to 5).")
+@click.option("--city", help="The city for which you want to know the weather forecast. Required.")
+@click.option("--days", default=1, help="Number of days you want to see in the weather forecast (from 1 to 5). "
+                                        "Default = 1.")
 def run(city, days):
     if not check_days(days) or not check_city(city):
         print_help_and_exit()
